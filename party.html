@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="party.js"></script>
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    
+    <ul id="events"></ul>
+
+    <h2>New Events</h2>
+    <form id="addEvent" name="addEvent">
+
+
+      <label>
+        Name
+        <input type="text" name="name" />
+      </label>
+      <label for="datetime-local">
+        Date/Time
+        <input type="datetime-local" id="date" name="date" value="2023-11-29T19:30" min="2023-11-22T00:00" max="2025-06-14T00:00" />
+      </label>
+      <label for="location">
+        Location
+        <input type="text" id="location" name="location" />
+      </label>
+      <label>
+        Description
+        <input type="text" name="description" />
+      </label>
+      
+      <button id="submit" type="submit">Add New Event</button>
+    </form>
+    
+  </body>
+  
+  </html>
